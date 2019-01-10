@@ -1,0 +1,63 @@
+.App {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background: #f0f0f0;
+    height: 100vh;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+    line-height: 2;
+    padding: 12px;
+}
+
+.sidebar a:hover {
+    background: #e0e0e0;
+}
+
+a.active {
+    color: red;
+}
+
+.body {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+    padding: 48px;
+    transition: all ease 1000ms;
+
+}
+
+.main {
+    flex: 1;
+}
+
+.topbar {
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.topbar a {
+    padding: 0 16px;
+}
+
+.fadeIn {
+    animation: fadeIn ease-out 1000ms;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
